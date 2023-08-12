@@ -1,5 +1,7 @@
 0x00. AirBnB clone - The console
 ![AirBnb Logo](https://www.digital.ink/wp-content/uploads/airbnb_logo_detail.jpg)
+
+
 Background Context
 Welcome to the AirBnB clone project!
 
