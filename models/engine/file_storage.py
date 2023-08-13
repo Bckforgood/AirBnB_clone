@@ -43,9 +43,11 @@ class FileStorage():
             dict[key] = self.__objects[key].to_dict()
         with open(self.__file_path, "w") as f:
             json.dump(dict, f)
-    def all(self):
-        """returns the dictionary '__objects'"""
-        return self.__objects
+
+
+def all(self):
+    """returns the dictionary '__objects'"""
+    return self.__objects
 
     def new(self, obj):
         """sets in '__objects' the 'obj' with key '<obj class name>.id'"""
@@ -60,5 +62,5 @@ class FileStorage():
                 dict = json.load(f)
             for i in dict:
                 self.__objects[i] = class_list[dict[i]["__class__"]](**dict[i])
-        except:
-            pass
+        except
+        pass
