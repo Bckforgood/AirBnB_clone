@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" "FileStorage" module"""
+"""FileStorage module"""
 
 import os.path
 import json
@@ -12,19 +12,15 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
-
-class_list = {"BaseModel": BaseModel,
-              "User": User,
-              "State": State,
-              "City": City,
-              "Amenity": Amenity,
-              "Place": Place,
-              "Review": Review
-              }
-white_list = []
-for key in class_list:
-    white_list.append(key)
-
+class_list = {
+    "BaseModel": BaseModel,
+    "User": User,
+    "State": State,
+    "City": City,
+    "Amenity": Amenity,
+    "Place": Place,
+    "Review": Review
+}
 
 class FileStorage():
     """Representation of a FileStorage"""
@@ -43,13 +39,14 @@ class FileStorage():
             dict[key] = self.__objects[key].to_dict()
         with open(self.__file_path, "w") as f:
             json.dump(dict, f)
+
     def all(self):
         """returns the dictionary '__objects'"""
         return self.__objects
 
     def new(self, obj):
         """sets in '__objects' the 'obj' with key '<obj class name>.id'"""
-        key = obj.__class__.__name__+"."+obj.id
+        key = obj.__class__.__name__ + "." + obj.id
         self.__objects.update({key: obj})
 
     def reload(self):
@@ -62,3 +59,4 @@ class FileStorage():
                 self.__objects[i] = class_list[dict[i]["__class__"]](**dict[i])
         except:
             pass
+
