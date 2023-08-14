@@ -47,10 +47,12 @@ class Command_help(unittest.TestCase):
     def test_help(self):
         h = ("Documented commands (type help <topic>):\n"
              "========================================\n"
-             "EOF  help  quit")
+             "EOF  all  create  destroy  help  quit  show")
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help"))
             self.assertEqual(h, output.getvalue().strip())
+
+
 class TestHBNBCommand_create(unittest.TestCase):
     """Unittests for testing create from the HBNB command interpreter."""
 
@@ -94,6 +96,7 @@ class TestHBNBCommand_create(unittest.TestCase):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("BaseModel.create()"))
             self.assertEqual(correct, output.getvalue().strip())
+
 
 if __name__ == '__main__':
     unittest.main()

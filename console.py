@@ -67,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
         """
         print("")
         return True
-    
+
     def do_create(self, arg):
         """Usage: create <class>
         Create a new class instance and print its id.
@@ -80,7 +80,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(eval(al[0])().id)
             storage.save()
-    
+
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
         Display the string rep of a class instance of a given id.
@@ -130,6 +130,7 @@ class HBNBCommand(cmd.Cmd):
                 elif len(argl) == 0:
                     objl.append(obj.__str__())
             print(objl)
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
