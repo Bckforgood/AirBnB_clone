@@ -1,16 +1,10 @@
-footer {
-    background-color: #00FF00;
-    color: white;
+footer{ 
+    background-color: white;
     height: 60px;
     width: 100%;
-    border-top: 1px solid #CCCCCC;
-    position: fixed;
+    place-content: center;
+    border-top: 1px solid #CCCCCC ;
+    display: grid;
+    position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
 }

@@ -1,14 +1,9 @@
-footer {
+footer{ 
     background-color: #00FF00;
     height: 60px;
     width: 100%;
-    position: fixed;
+    place-content: center;
+    display: grid;
+    position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
 }
