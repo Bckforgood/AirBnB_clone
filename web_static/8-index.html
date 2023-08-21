@@ -1,60 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>AirBnB</title>
+  <head>
+    <title>
+      AirBnB Clone
+    </title>
     <link rel="stylesheet" href="styles/4-common.css">
     <link rel="stylesheet" href="styles/3-header.css">
     <link rel="stylesheet" href="styles/3-footer.css">
     <link rel="stylesheet" href="styles/6-filters.css">
     <link rel="stylesheet" href="styles/8-places.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
-</head>
-<body>
-
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <!-- Logo content goes here -->
-        </div>
     </header>
-
     <div class="container">
-        <section class="filters">
-            <!-- Filters content goes here -->
-        </section>
-
-        <section class="places">
-            <h1>Places</h1>
-            <article class="place">
-                <h2>My home</h2>
-                <div class="price_by_night">$150</div>
-                <div class="information">
-                    <div class="max_guest">
-                        <p>Max Guests</p>
-                        <span>4</span>
-                    </div>
-                    <div class="number_rooms">
-                        <p>Bedrooms</p>
-                        <span>2</span>
-                    </div>
-                    <div class="number_bathrooms">
-                        <p>Bathrooms</p>
-                        <span>1</span>
-                    </div>
-                </div>
-                <div class="user">
-                    <p><strong>Owner:</strong> Abderrazzak Khbaza</p>
-                </div>
-                <div class="description">
-                    <p>This is My first Project with HTML in.</p>
-                </div>
-            </article>
-            <!-- Additional places go here -->
-        </section>
+      <section class="filters">
+        <div class="locations">
+          <h3>
+            States
+          </h3>
+          <h4>
+            California, Arizona...
+          </h4>
+          <u1 class="popover">
+            <h2>Arizona:</h2>
+            <li class="no-list-display">Page</li>
+            <li class="no-list-display">Page2</li>
+            <h2>California:</h2>
+            <li class="no-list-display">San Francisco</li>
+            <li class="no-list-display">Lost Altos</li>
+          </u1>
+        </div>
+        <div class="amenities">
+          <h3>
+            Amenities
+          </h3>
+          <h4>
+            Internet, Kitchen...
+          </h4>
+          <u1 class="popover">
+            <li class="no-list-display">Internet</li>
+            <li class="no-list-display">TV</li>
+            <li class="no-list-display">Kitchen</li>
+            <li class="no-list-display">Iron</li>
+          </u1>
+        </div>
+        <button>
+          Search
+        </button>
+      </section>
+      <section class="places">
+        <h1>
+          Places
+        </h1>
+        <article>
+          <div class="title-price">
+            <div class="title"><h2>My home</h2></div>
+            <div class="price_by_night"><span>$80</span></div>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <span>2 Guests</span>
+            </div>
+            <div class="number_rooms">
+              <span>1 Bedroom</span>
+            </div>
+            <div class="number_bathrooms">
+              <span>1 Bathroom</span>
+            </div>
+          </div>
+          <div class="user">
+            <span><b>Owner:</b> Khbaza Abderrazzak</span>
+          </div>
+          <div class="description">
+            <p>
+              This is a lovely home
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="title-price">
+            <div class="title"><h2>Tiny house</h2></div>
+            <div class="price_by_night"><span>$30</span></div>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <span>4 Guests</span>
+            </div>
+            <div class="number_rooms">
+              <span>2 Bedrooms</span>
+            </div>
+            <div class="number_bathrooms">
+              <span>1 Bathroom</span>
+            </div>
+          </div>
+          <div class="user">
+            <span><b>Owner:</b> khbaza Abderrazzak</span>
+          </div>
+          <div class="description">
+            <p>
+              These are lovely 2 bedrooms 
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="title-price">
+            <div class="title"><h2>A suite</h2></div>
+            <div class="price_by_night"><span>$50</span></div>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <span>2 Guests</span>
+            </div>
+            <div class="number_rooms">
+              <span>1 Bedroom</span>
+            </div>
+            <div class="number_bathrooms">
+              <span>1 Bathroom</span>
+            </div>
+          </div>
+          <div class="user">
+            <span><b>Owner:</b> Khbaza Abderrazzak</span>
+          </div>
+          <div class="description">
+            <p>
+              This is a lovely 1 bedroom and 1 bathroom 
+            </p>
+          </div>
+        </article>
+      </section>
     </div>
-
     <footer>
-        <p>Best School</p>
+      <p>
+        Best School
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
