@@ -1,4 +1,9 @@
-.filters {
+div.container {
+	 max-width: 1000px;
+    	margin: 30px auto;
+    	text-align: center;
+}
+section.filters {
     background-color: white;
     height: 70px;
     width: 100%;
@@ -8,7 +13,7 @@
     align-items: center;
 }
 
-.search-button {
+section.search-button {
     font-size: 18px;
     background-color: #FF5A5F;
     color: #FFFFFF;
@@ -21,6 +26,6 @@
     cursor: pointer;
 }
 
-.search-button:hover {
+section.search-button:hover {
     opacity: 1;
 }
